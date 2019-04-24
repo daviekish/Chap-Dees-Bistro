@@ -25,12 +25,27 @@
   <div class="bg-image"></div>
       <div id="navbar">
       
-      <a href="location">location</a>
-      <a href="contact.html">Contact</a>
-      <a href="events.html">Events</a>
-      <a href="index.html">Home</a>
+      <a href="location"><u>location</u></a>
+      <a href="contact.html"><u>Contact</u></a>
+      <a href="gallery.html"><u>Gallery</u></a>
+      <a href="events.html"><u>Events</u></a>
+      <a href="index.html"><u>Home</u></a>
       </div>
-  
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+    }
+  </script>
+
     
   <div class="bg-text">
     <h2 style="font-family: 'Milonga', cursive; ">Chap Dee Bistro.</h2>
@@ -39,6 +54,39 @@
     <br>
     <p style="font-family: 'EB Garamond', serif; font-size:25px; color:rgb(197, 195, 195)">The Kibandaski of
       Kilimani.</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="background-color:rgb(209, 202, 202); " class="col-md-4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <P>Have you ever wanted to have some food out of the odinary?<br></P>
+        <p>Are you teird of the same routine of fast foods during work?
+        <p>Want a place to chill while you work?</p>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      
+      <br>
+      
+    </div>
+    <br>
+    <br>
+    <br>
+    
   </div>
 </body>
 
