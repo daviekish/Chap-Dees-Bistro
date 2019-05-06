@@ -10,46 +10,48 @@
   <script src="js/scripts.js"></script>
 </head>
 <body style="background-color:rgb(12, 10, 36)">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img id="myImg" src="images/chaps.jpg" alt="snow" style="width:100%;max-width:300px">
+    <div id="navbar">
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
-        <script>
-          // Get the modal
-          var modal = document.getElementById('myModal');
-
-          // Get the image and insert it inside the modal - use its "alt" text as a caption
-          var img = document.getElementById('myImg');
-          var modalImg = document.getElementById("img01");
-          var captionText = document.getElementById("caption");
-          img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-          }
-
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close")[0];
-
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function () {
-            modal.style.display = "none";
-          }
-        </script>
-
-      </div>
-
-
-
-
+      <a href="location">location</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="events.html">Events</a>
+      <a href="index.html">Home</a>
     </div>
-  </div>
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+      }
+    </script>
+    <br> 
+        <div class="row">
+          <div class="column">
+            <img src="images/im5.jpg" style="width:100%">
+            <img src="images/img1.jpg" style="width:100%">
+            <img src="images/img10.jpg" style="width:100%">
+            <img src="images/img11.jpg" style="width:100%">
+            <img src="images/img12.jpg" style="width:100%">
+            <img src="images/img13.jpg" style="width:100%">
+            <img src="images/img2.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="images/img3.jpg" style="width:100%">
+            <img src="images/img4.jpg" style="width:100%">
+            <img src="/images/img6.jpg" style="width:100%">
+            <img src="/images/img7.jpg" style="width:100%">
+            <img src="/images/img8.jpg" style="width:100%">
+            <img src="/images/img9.jpg" style="width:100%">
+          </div>
+          
+        </div>
 </body>
 </html>
